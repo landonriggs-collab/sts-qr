@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Training</title>
+</head>
+<body>
+    <h1 id="training-title">Training</h1>
+    
+    <div class="video-container">
+        <video id="training-video" 
+               controls 
+               preload="metadata"
+               poster="assets/videos/FAC1-M03-poster.jpg">
+            <!-- Source will be set via JavaScript -->
+        </video>
+    </div>
+
+    <button id="btn-complete">Mark Complete</button>
+
+    <script>
+        // Get the machine ID from URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const machineId = urlParams.get('id');
+
+        // Update the title with the machine ID
+        if (machineId) {
+            document.title = `Training — ${machineId}`;
+            document.getElementById('training-title').textContent = `Training — ${machineId}`;
+        }
+
+        // Set video source if it's FAC1-M03
+        const videoElement = document.getElementById('training-video');
+        if (machineId === 'FAC1-M03') {
+            videoElement.src = 'assets/videos/FAC1-M03.mp4';
+        }
+
+        // Add click handler for the complete button
+        document.getElementById('btn-complete').addEventListener('click', () => {
+            console.log(`Training marked complete for machine: ${machineId}`);
+        });
+    </script>
+</body>
+</html>
