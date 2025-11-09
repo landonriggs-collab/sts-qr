@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STS QR Generator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="header">
+                SCAN OR TAP TO TRAIN — STS
+            </div>
+            <input type="text" id="url-input" value="https://sts.run/FAC1-M03">
+            <button id="btn-generate">Generate QR Code</button>
+            <div id="qr"></div>
+            <button id="btn-svg">Download SVG</button>
+            <button id="btn-png">Download PNG (hi-res)</button>
+        </div>
+    </div>
+    <script src="src/main.js"></script>
+</body>
+</html>

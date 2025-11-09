@@ -1,0 +1,61 @@
+/* styles.css */
+
+/* Import Google Font Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+    background-color: #121212; /* Dark background */
+    color: white; /* White text */
+    font-family: 'Inter', sans-serif; /* Use Inter font */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    background-color: #1E1E1E; /* Card background */
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: 420px; /* Card width */
+    text-align: center;
+}
+
+.header {
+    background-color: #BF5700; /* Burnt orange header */
+    color: white; /* White text */
+    padding: 10px;
+    border-radius: 8px 8px 0 0; /* Rounded top corners */
+    font-weight: bold;
+}
+
+#url-input {
+    width: 100%; /* Full width input */
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 4px;
+    background-color: #2A2A2A; /* Dark input background */
+    color: white; /* White text */
+}
+
+button {
+    background-color: #BF5700; /* Button background */
+    color: white; /* White text */
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #A44D00; /* Darker burnt orange on hover */
+}
+
+#qr {
+    margin: 20px 0; /* Space above QR code */
+}

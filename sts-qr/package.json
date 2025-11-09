@@ -1,0 +1,20 @@
+{
+  "name": "sts-qr-generator",
+  "version": "1.0.0",
+  "description": "A dark-themed QR code generator for STS.",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "live-server",
+    "build": "webpack"
+  },
+  "dependencies": {
+    "qrcode": "^1.4.4",
+    "live-server": "^1.2.1"
+  },
+  "devDependencies": {
+    "webpack": "^5.64.4",
+    "webpack-cli": "^4.9.1"
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}
